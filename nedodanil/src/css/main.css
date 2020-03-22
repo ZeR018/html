@@ -1,0 +1,329 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+input,
+input:hover,
+input:active,
+input:focus-within,
+input:invalid,
+input:required,
+input:valid,
+textarea,
+select {
+  -webkit-appearance: none;
+  outline: none;
+}
+.container {
+  width: 100%;
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+main {
+  background: url(../img/menu/bg.png) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.header {
+  padding: 2.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-logo {
+  position: relative;
+}
+.header-logo img {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+.header-logo a {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 4.2rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+}
+.header-logo a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header-nav {
+  font-weight: 400;
+}
+.header-nav a {
+  margin-right: 4.5rem;
+  color: #ffffff;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.header-nav a:hover {
+  color: #a3a5ba;
+}
+.nav-button {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 1.2rem 4.7rem;
+  border-radius: 20px;
+  border: 3px solid #ffffff;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.nav-button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+.text {
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+.main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-inner .content {
+  padding-top: 19.5rem;
+  width: 52%;
+}
+.main-inner .content .text {
+  padding: 3.5rem 0 8.5rem;
+}
+.main-inner .content .subtitle {
+  font-size: 2.2rem;
+}
+.main-inner .phone {
+  width: 48%;
+  display: block;
+  position: relative;
+}
+.main-inner .phone img {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+}
+.forms {
+  position: relative;
+  width: 512px;
+  height: 61px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.forms input {
+  border-radius: 30px;
+  border: none;
+  height: 100%;
+  width: 39rem;
+  padding-left: 4rem;
+  padding-right: 8rem;
+  color: #000000;
+}
+.forms button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.button {
+  color: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, from(#7226d6), to(#3327d7));
+  background: linear-gradient(-90deg, #7226d6, #3327d7);
+  padding: 0 6.4rem;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  height: 61px;
+}
+.button:hover {
+  color: #000000;
+}
+.section {
+  padding: 13rem 0;
+}
+.section-about {
+  background: url(../img/about-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.section-feedback {
+  background: url(../img/feedback/bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+  padding: 12.5rem 0 7rem;
+}
+.about-header .content {
+  width: 50%;
+}
+.about-header .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+  font-size: 1.7rem;
+}
+.statistic {
+  padding-top: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.statistic-item {
+  width: 25%;
+  text-align: center;
+}
+.statistic-item .digit {
+  font-weight: 900;
+  font-size: 6.2rem;
+}
+.statistic-item .sign {
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+.feedback {
+  width: 74.6%;
+  padding-top: 6rem;
+  padding-left: 6.7rem;
+  height: 100vh;
+  margin-left: 25.4%;
+}
+.feedback button {
+  margin-top: 50px;
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.feedback-img {
+  width: 25.4%;
+  border-top: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: auto;
+}
+.feedback-header {
+  text-align: center;
+  padding-left: 23rem;
+  padding-bottom: 5rem;
+}
+.feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-right: 5rem;
+}
+.feedback-form .findings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feedback-form .findings .fb-input {
+  display: block;
+  width: 49rem;
+  padding: 1.7rem 3rem;
+  border-radius: 30px;
+  border: 1px solid #000000;
+}
+.feedback-form .comment {
+  height: 27rem;
+  margin-left: 10rem;
+}
+.feedback-form .comment textarea {
+  height: 100%;
+  width: 49rem;
+  padding: 1.7rem 3rem;
+  border-radius: 30px;
+  border: 1px solid #000000;
+}
+.footer .links {
+  background: -webkit-gradient(linear, right top, left top, from(#7226d6), to(#3327d7));
+  background: linear-gradient(-90deg, #7226d6, #3327d7);
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .links i {
+  text-align: center;
+  width: 16.6666%;
+  border-right: 1px solid #9d96eb;
+  padding: 4.6rem 0;
+  font-size: 62px;
+}
+.footer .links i:last-child {
+  border-right: none;
+}
