@@ -7,4 +7,4 @@
 
 [Сайт Nedodanil](https://zer018.github.io/nedodanil/src/ "Сайт недоданила")
 
-[Batman](https://ZeR018.github.io/Batman/Batman/ )
+[Batman](https://ZeR018.github.io/Batman/ )
