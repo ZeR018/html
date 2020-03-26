@@ -34,7 +34,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: top center;
 	border: none;
-	// background-size: cover;
+	background-size: 100%;
 
 	font-family: Roboto;
 
@@ -105,11 +105,16 @@ body{
 
 	.avatar{
 		margin-left: 20px;
+		cursor: pointer;
 
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
 		object-fit: cover;
+	}
+
+	.bookmark{
+		cursor: pointer;
 	}
 }
 
@@ -217,15 +222,19 @@ body{
 	border-radius: 3px;
 	color: #000;
 
-	padding: 43px 50px;
+	padding: 3% 4%;
 
 	display: flex;
 	justify-content: space-between;
 }
 
+.short-info{
+	margin-right: 3%;
+}
+
 .poster{
 	display: block;
-	margin-top: -80px;
+	margin-top: -40%;
 	margin-bottom: 20px;
 }
 
@@ -252,7 +261,9 @@ body{
 
 .actors-list{
 	margin: 0;
+
 	padding-left: 15px;
+	line-height: 150%;
 	list-style: none;
 	text-decoration: underline;
 }
@@ -267,14 +278,21 @@ body{
 }
 
 .tabs{
+	display: flex;
+	align-items: center;
+	margin-bottom: 4%;
 
 	&-item{
 		color: #000;
 		text-decoration: none;
-		margin-right: 40px;
+		margin-right: 4%;
 
 		font-size: 18px;
 		line-height: 21px;
+
+		&:last-child{
+			margin-right: 0;
+		}
 
 		// transition: all .2s linear;
 
@@ -290,11 +308,185 @@ body{
 	&-content{
 		margin-right: 70px;
 	}
+
+	.bookmark-added{
+		vertical-align: middle;
+		color: #FF8F27;
+	}
 }
 
 .text{
 	font-size: 16px;
 	line-height: 140%;
+
+	margin-top: 0;
+}
+
+
+.subscribe-form{
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.subscribe-title{
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 150%;
+
+	margin-top: 0;
+	margin-bottom: 14px;
+}
+
+.subscribe-input{
+	flex: 1;
+	background: rgba(196, 196, 196, 0.5);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	padding: 18px 12px;
+	border: none;
+
+	color: #aeaeae;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.subscribe-button{
+	background: #FF8F27;
+	border-radius: 0px 5px 5px 0px;
+	border: none;
+	padding: 15px;
+}
+
+@media(max-width: 1200px) {
+	.container{
+		max-width: 960px;
+	}
+
+	.tabs-item{
+		font-size: 16px;
+	}
+
+	.text{
+		font-size: 15px;
+	}
+}
+
+@media(max-width: 992px){
+	.container{
+		max-width: 740px;
+	}
+
+	.tabs{
+		display: flex;
+		flex-wrap: wrap;
+
+		&-item{
+			line-height: 2;
+			flex-basis: 20%;
+		}
+	}
+
+	.full-content{
+		flex-wrap: wrap;
+	}
+
+	.tabs-content{
+		margin-bottom: 5%;
+	}
+
+	.text{
+		font-size: 14px;
+	}
+
+	.actors-list{
+		font-size: 14px;
+	}
+
+	.subscribe-form{
+		margin-bottom: 24px;
+	}
+
+	body{
+		background-size: auto auto;
+	}
+
+	.tabs-content{
+		margin-right: 0;
+	}
+
+}
+
+@media(max-width: 768px){
+	.container{
+		max-width: 540px;
+	}
+
+	.more{
+		display: none;
+	}
+
+	// .tabs-item{
+	// 	flex-basis: 25%;
+	// }
+}
+
+@media(max-width: 578px){
+	.container{
+		width: 95%;
+	}
+
+	.header{
+		flex-wrap: wrap;
+
+		margin-bottom: 80%;
+	}
+
+	.search{
+		flex-basis: 100%;
+		order: 3;
+		margin-top: 5%;
+	}
+
+	.content{
+		flex-wrap: wrap;
+	}
+
+	// .short-info{
+	// 	margin-bottom: 5%;
+	// }
+
+	.actors-list, .actors-title{
+		display: none;
+	}
+
+	.tabs-item{
+		flex-basis: 33%;
+	}
+
+	.short-info{
+		margin-right: 0;
+	}
+
+	.button{
+		width: 100%;
+	}
+
+	.movie-info{
+		flex-wrap: wrap;
+
+		.play{
+			margin-top: 5%;
+			flex-basis: 100%;
+		}
+	}
+
+	.poster{
+		width: 100%;
+		display: inline-block;
+		margin-top: -20%;
+	}
+
 }
 
 

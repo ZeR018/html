@@ -35,6 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   border: none;
+  background-size: 100%;
   font-family: Roboto;
 }
 .header {
@@ -109,11 +110,15 @@ body {
 }
 .user .avatar {
   margin-left: 20px;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.user .bookmark {
+  cursor: pointer;
 }
 .title {
   margin: 0;
@@ -215,7 +220,7 @@ body {
   background: #FFFFFF;
   border-radius: 3px;
   color: #000;
-  padding: 43px 50px;
+  padding: 3% 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,9 +228,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.short-info {
+  margin-right: 3%;
+}
 .poster {
   display: block;
-  margin-top: -80px;
+  margin-top: -40%;
   margin-bottom: 20px;
 }
 .button {
@@ -247,6 +255,7 @@ body {
 .actors-list {
   margin: 0;
   padding-left: 15px;
+  line-height: 150%;
   list-style: none;
   text-decoration: underline;
 }
@@ -263,12 +272,24 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4%;
+}
 .tabs-item {
   color: #000;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 4%;
   font-size: 18px;
   line-height: 21px;
+}
+.tabs-item:last-child {
+  margin-right: 0;
 }
 .tabs-item-active {
   color: #FF8F27;
@@ -276,7 +297,152 @@ body {
 .tabs-content {
   margin-right: 70px;
 }
+.tabs .bookmark-added {
+  vertical-align: middle;
+  color: #FF8F27;
+}
 .text {
   font-size: 16px;
   line-height: 140%;
+  margin-top: 0;
+}
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+}
+.subscribe-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.subscribe-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: rgba(196, 196, 196, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 18px 12px;
+  border: none;
+  color: #aeaeae;
+  font-size: 14px;
+  line-height: 16px;
+}
+.subscribe-button {
+  background: #FF8F27;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  padding: 15px;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .tabs-item {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+  .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabs-item {
+    line-height: 2;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .full-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tabs-content {
+    margin-bottom: 5%;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .actors-list {
+    font-size: 14px;
+  }
+  .subscribe-form {
+    margin-bottom: 24px;
+  }
+  body {
+    background-size: auto auto;
+  }
+  .tabs-content {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .more {
+    display: none;
+  }
+}
+@media (max-width: 578px) {
+  .container {
+    width: 95%;
+  }
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 80%;
+  }
+  .search {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 5%;
+  }
+  .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .actors-list,
+  .actors-title {
+    display: none;
+  }
+  .tabs-item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .short-info {
+    margin-right: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .movie-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .movie-info .play {
+    margin-top: 5%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .poster {
+    width: 100%;
+    display: inline-block;
+    margin-top: -20%;
+  }
 }
