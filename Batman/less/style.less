@@ -294,11 +294,11 @@ body{
 			margin-right: 0;
 		}
 
-		// transition: all .2s linear;
+		transition: all .2s linear;
 
-		// &:hover{
-		// 	color: #FF8F27;
-		// }
+		&:hover{
+			color: #FF8F27;
+		}
 
 		&-active{
 			color: #FF8F27;
@@ -307,12 +307,16 @@ body{
 
 	&-content{
 		margin-right: 70px;
+		display: none;
 	}
-
 	.bookmark-added{
 		vertical-align: middle;
 		color: #FF8F27;
 	}
+}
+
+.visible{
+	display: block;
 }
 
 .text{
@@ -335,6 +339,7 @@ body{
 
 	margin-top: 0;
 	margin-bottom: 14px;
+	
 }
 
 .subscribe-input{

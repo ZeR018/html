@@ -287,19 +287,28 @@ body {
   margin-right: 4%;
   font-size: 18px;
   line-height: 21px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 .tabs-item:last-child {
   margin-right: 0;
+}
+.tabs-item:hover {
+  color: #FF8F27;
 }
 .tabs-item-active {
   color: #FF8F27;
 }
 .tabs-content {
   margin-right: 70px;
+  display: none;
 }
 .tabs .bookmark-added {
   vertical-align: middle;
   color: #FF8F27;
+}
+.visible {
+  display: block;
 }
 .text {
   font-size: 16px;
