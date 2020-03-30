@@ -245,7 +245,7 @@ if (formData.from && formData.to) {
 
 	const requestData = `?depart_date=${formData.when}&origin=${formData.from.code}&destination=${formData.to.code}&one_way=true&token=${API_KEY}`;
 
-		getData(calendar + requestData, (data) => {
+		getData(proxy + calendar + requestData, (data) => {
 			renderCheap(data, formData.when);
 		}, 
 		error => {
@@ -259,7 +259,7 @@ if (formData.from && formData.to) {
 
 // Вызовы функций
 
-getData(citiesApi, (data) => {
+getData(proxy + citiesApi, (data) => {
 	city = JSON.parse(data).filter(item => item.name);
 
 	city.sort( (a, b) =>{
