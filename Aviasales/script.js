@@ -259,7 +259,7 @@ if (formData.from && formData.to) {
 
 // Вызовы функций
 
-getData(proxy + citiesApi, (data) => {
+getData(citiesApi, (data) => {
 	city = JSON.parse(data).filter(item => item.name);
 
 	city.sort( (a, b) =>{
