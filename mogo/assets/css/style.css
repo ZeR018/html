@@ -127,7 +127,10 @@ h1, h2, h3, h4, h5, h6 {
 .nav{
   font-size: 14px;
   text-transform: uppercase;
+}
 
+.nav.active {
+  display: block;
 }
 
 .nav__link{
@@ -185,7 +188,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 24px;
   right: 24px;
   z-index: 1;
+}
 
+.nav-toggle:focus{
+  outline: 0;
 }
 
 .nav-toggle.active .nav-toggle__item{
@@ -219,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 1;
 
-  transition: transform .2 linear;
+  transition: transform .2s linear;
 }
 
 .nav-toggle__item:before{
@@ -557,7 +563,7 @@ hr{
 /* Devices */
 
 .devices{
-  overflow: hidden;
+/*  overflow: hidden;*/
 
   width: 100%;
   max-width: 600px;
@@ -675,16 +681,19 @@ hr{
 
 
 .reviews{
-  padding: 0 110px;
   position: relative;
 }
 
 .reviews__item{
   padding-left: 255px;
   position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .reviews__photo{
+  border-radius: 50%;
+  border: 1px solid #95e1d3;
   display: block;
   width: 210px;
   height: 210px;
@@ -695,13 +704,17 @@ hr{
   z-index: 1;
 }
 
+.reviews__photo--square{
+  border-radius: 0;
+}
+
 .reviews__text{
   font-family: 'Roboto';
   font-style: italic;
   font-size: 24px;
   font-weight: 300;
   color: #999999;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .reviews__author{
@@ -721,9 +734,23 @@ hr{
   margin-right: 10px;
 }
 
-.reviews__btn{
+.slick-slider{
+  padding: 0 110px;
+}
+
+.slick-list {
+  min-height: 210px;
+}
+
+.slick-arrow{
+  cursor: pointer;
+
+  display: block;
   font-size: 0;
   color: transparent;
+
+  border: 0;
+  background: none;
 
   position: absolute;
   top: 50%;
@@ -731,7 +758,11 @@ hr{
   z-index: 1;
 }
 
-.reviews__btn:after{
+.slick-arrow:focus{
+  outline: 0;
+}
+
+.slick-arrow:after{
   content: "";
   display: block;
   width: 16px;
@@ -743,12 +774,12 @@ hr{
 
 }
 
-.reviews__btn--prev{
+.slick-prev{
   left: 0;
   transform: rotate(-45deg);
 }
 
-.reviews__btn--next{
+.slick-next{
   right: 0;
   transform: rotate(135deg);
 }
@@ -1369,7 +1400,7 @@ hr{
 
   /* Reviews */
 
-  .reviews{
+  .slick-slider{
     padding: 0 60px;
   }
 
@@ -1531,7 +1562,7 @@ hr{
 
   /* Reviews */
 
-  .reviews{
+  .slick-slider{
     padding: 0 30px;
   }
 
@@ -1669,11 +1700,11 @@ hr{
 
   /* Reviews */
 
-  .reviews{
+  .slick-slider{
     padding: 0;
   }
 
-  .reviews__btn{
+  .slick-arrow{
     top: 20%;
   }
 
